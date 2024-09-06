@@ -113,7 +113,7 @@ def read_xtb_results(
         final_atoms = read(xtb_opt_file)
         results["final_atoms"] = final_atoms
 
-    if forces is not None:
-        results["forces"] = forces
+    # if forces is not None:
+    #     results["forces"] = forces
 
     return dict(sorted(results.items()))
