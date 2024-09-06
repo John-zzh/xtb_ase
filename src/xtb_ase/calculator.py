@@ -251,8 +251,8 @@ class XTB(GenericFileIOCalculator):
         else:
             raise ValueError(f"Unsupported method {method}")
 
-        if "--grad" not in profile.argv:
-            profile.argv.append("--grad")
+        # if "--grad" not in profile.argv:
+        #     profile.argv.append("--grad")
 
         super().__init__(
             template=_XTBTemplate(),
